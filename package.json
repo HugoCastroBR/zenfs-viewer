@@ -1,0 +1,63 @@
+{
+  "name": "zenfs-viewer",
+  "description": "Viewer for ZenFS in Chrome Devtools",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/chrome": "^0.0.269",
+    "@types/file-saver": "^2.0.7",
+    "@types/lodash-es": "^4.17.12",
+    "@wxt-dev/module-svelte": "^1.0.1",
+    "autoprefixer": "^10.4.20",
+    "bits-ui": "1.0.0-next.51",
+    "clsx": "^2.1.1",
+    "lucide-svelte": "^0.456.0",
+    "mode-watcher": "^0.4.1",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "svelte-radix": "^2.0.1",
+    "svelte-sonner": "^0.3.28",
+    "tailwind-merge": "^2.5.4",
+    "tailwind-variants": "^0.2.1",
+    "tailwindcss": "^3.4.9",
+    "tailwindcss-animate": "^1.0.7",
+    "tslib": "^2.7.0",
+    "type-fest": "^4.26.1",
+    "typescript": "^5.6.2",
+    "utility-types": "^3.11.0",
+    "vitest": "^2.1.4",
+    "wxt": "^0.19.11"
+  },
+  "dependencies": {
+    "@fcanvas/communicate": "^1.1.7",
+    "@webext-core/messaging": "^2.0.2",
+    "@zenfs/core": "^1.2.10",
+    "@zenfs/dom": "^1.0.3",
+    "comlink": "^4.4.2",
+    "fast-glob": "^3.3.2",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "lodash-es": "^4.17.21",
+    "pathe": "^1.1.2",
+    "webext-bridge": "^6.0.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "@sveltejs/vite-plugin-svelte": "^4.0.0"
+    }
+  }
+}
