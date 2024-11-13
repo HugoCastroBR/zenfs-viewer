@@ -11,6 +11,8 @@ export default defineConfig({
     action: {
       default_title: 'ZenFS Viewer',
     },
+    host_permissions: ['https://*/*', 'http://*/*'],
+    permissions: ['scripting', 'tabs'],
     web_accessible_resources: [
       {
         resources: [

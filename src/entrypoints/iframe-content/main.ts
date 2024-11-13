@@ -20,10 +20,7 @@ console.log('iframe content')
           'rename',
         ] as (keyof ZenfsProtocols)[]
       ).reduce((acc, key) => {
-        acc[key] = (...args: any) => {
-          console.log('ipc', key, args)
-          return (ipc[key] as any)(...args)
-        }
+        acc[key] = (...args: any) => (ipc[key] as any)(...args)
         return acc
       }, {} as ZenfsProtocols),
       readFile: async (path, encoding) => {
